@@ -1,18 +1,19 @@
 import React from "react";
 import background from "./assets/background.jpg";
-import { Header, Home, Footer } from "./components/layout";
+import { Header, Home, ServiceCard, Footer } from "./components/layout";
 
 const App = () => {
   return (
-    <div className="relative">
-      <img src={background} className="w-full h-auto" />
+    <div className="relative font-netflix">
+      <img src={background} className="w-full absolute -z-30 h-auto" />
       <div
-        className="absolute inset-0 bg-[#00091C] opacity-60 z-10"
+        className="absolute inset-0 opacity-80 h-[160vh] bg-gradient-to-t from-[#01081C] to-[#01081C] -z-20"
         // colored overlay
       ></div>
-      <div className="absolute top-0 left-0  z-20">
+      <div className=" top-0 left-0 z-50">
         <Header />
         <Home />
+        <ServiceCard />
         <Footer />
       </div>
     </div>

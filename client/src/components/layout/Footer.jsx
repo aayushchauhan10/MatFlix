@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return <div className="text-white bg-[#01081C]">Footer</div>;
 };
 
 export default Footer;
