@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import background from "./assets/background.jpg";
-import { Header, Home, ServiceCard, Footer } from "./components/layout";
+import {
+  Header,
+  Home,
+  ServiceCard,
+  Questions,
+  Footer,
+} from "./components/layout";
 
 const App = () => {
   return (
@@ -14,6 +20,7 @@ const App = () => {
         <Header />
         <Home />
         <ServiceCard />
+        <Questions />
         <Footer />
       </div>
     </div>
