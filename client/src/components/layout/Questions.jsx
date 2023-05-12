@@ -10,16 +10,16 @@ const Questions = () => {
 
   return (
     <div className="py-6 text-white bg-[#01081C]">
-      <h1 className="font-bold text-[35px] px-16 pt-16 pb-4">
+      <h1 className="font-bold text-[35px] px-24 pt-20 pb-2">
         Frequently Asked Questions
       </h1>
       {questions.map((question, index) => (
         <div
           key={index}
           onClick={() => handleClick(index)}
-          className="mb-4 mx-24 bg-[#122044] font-netflix p-5"
+          className="mb-4 mx-24 bg-[#122044] font-netflix  p-6"
         >
-          <div className="flex justify-between hover:bg[#223263] focus:bg-[#223263] active:bg[#223263] items-center cursor-pointer">
+          <div className="flex justify-between hover:bg[#223263]  focus:bg-[#223263] active:bg[#223263] items-center cursor-pointer">
             <h2 className="text-[25px]">{question.title}</h2>
             <span>
               {activeIndex === index ? (
@@ -56,13 +56,13 @@ const Questions = () => {
             </span>
           </div>
           <div
-            className={` text-white  ${
+            className={`border-t-[1px] border-[#01081C] text-white  ${
               activeIndex === index
-                ? "opacity-100 max-h-100 text-[20px] mt-2"
+                ? "opacity-100 max-h-120 text-[20px]  mt-3"
                 : "opacity-0 max-h-0"
             } transition-all duration-300`}
           >
-            <hr className="pb-2" />
+            {/* <hr className="pb-2" /> */}
             {question.description}
           </div>
         </div>
