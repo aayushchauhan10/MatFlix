@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { questions } from "../../constants"; // Assuming the questions array is exported from 'data.js'
+import { questions } from "../../constants";
+import { Email } from "./index";
 
 const Questions = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -67,6 +68,9 @@ const Questions = () => {
           </div>
         </div>
       ))}
+      <div className="px-24">
+        <Email />
+      </div>
     </div>
   );
 };
