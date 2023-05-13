@@ -1,11 +1,8 @@
 import React from "react";
 import { Signup } from "../pages";
+import { Link } from "react-router-dom";
 
 const Buttons = () => {
-  function handleClick() {
-    <Signup />;
-  }
-
   return (
     <div className="flex items-center">
       <button
@@ -14,12 +11,12 @@ const Buttons = () => {
       >
         English
       </button>
-      <button
+      <Link
+        to="signup/"
         className="bg-[#E40915] text-white rounded-[5px] shadow-lg py-1.5 text-[14px] px-3.5 hover:bg-[#C11018]"
-        onClick={handleClick}
       >
         Sign In
-      </button>
+      </Link>
     </div>
   );
 };
